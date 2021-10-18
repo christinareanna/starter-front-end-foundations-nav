@@ -1,30 +1,45 @@
 main {
   padding: 20px 0;
+  background-color: pink
 }
 
 section {
   margin-bottom: 100px;
+  background-color: beige;
 }
 
 h1 {
   margin: 0 0 30px 10px;
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2 {
+  font-size: 30px;
   margin: 0 10px;
   border-bottom: 1px solid gray;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h3 {
-  margin: 12px 0;
-  border-bottom: 1px solid lightgray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 30px;
+  letter-spacing: 4px;
+  background-color: beige;
+  margin: 0 20px;
+  border-bottom: 1px solid rgb(186, 173, 173);
+  text-align: center;
 }
 
 /* Groups & Items */
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
@@ -35,4 +50,21 @@ h3 {
 
 .item-double {
   flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 20%;
+    font-size: 50px;
+  }
+
+  .group {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+img {
+  width: 100%
 }
