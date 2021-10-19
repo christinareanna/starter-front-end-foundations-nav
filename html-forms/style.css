@@ -5,3 +5,12 @@ body {
 input {
   margin: 5px;
 }
+
+form {
+  padding-left: 60px;
+  margin: 30px;
+}
+
+.input-form {
+  margin-bottom: 30px;
+}
